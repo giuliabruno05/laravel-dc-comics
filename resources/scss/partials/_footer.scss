@@ -1,0 +1,83 @@
+@use"mixins" as *;
+
+.nav-footer {
+    background-image: url("../img/footer-bg.jpg");
+    height: 260px;
+
+
+
+    .contenitore {
+        display: flex;
+        justify-content: space-between;
+
+        .logo-footer {
+            width: 350px;
+            position: relative;
+            top: -40px;
+        }
+
+        .shortcut {
+            margin-top: 10px;
+            display: flex;
+
+            ul {
+                margin: 0 10px;
+
+                .title {
+                    font-size: 1rem;
+                    margin: 5px 0;
+                    color: #fff;
+                }
+
+                li {
+                    padding: 3px;
+                    font-size: 0.6rem;
+                    font-weight: 300;
+
+                    a {
+                        color: #fff;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.barra-footer {
+    height: 100px;
+    background-color: #303030;
+    position: relative;
+    z-index: 1000;
+
+
+    .contenitore {
+        @include display-flex;
+
+        .button {
+            border-radius: 0%;
+            border: 2px solid #0282f9;
+            background-color: rgba(0, 0, 0, 0);
+            color: #fff;
+            font-size: 0.8rem;
+            padding: 10px;
+        }
+
+        .icon {
+            display: flex;
+
+
+            .image {
+                width: 20px;
+                margin: 0 5px;
+            }
+
+            .follow {
+                color: #0282f9;
+                margin-right: 10px;
+            }
+        }
+    }
+
+
+}
